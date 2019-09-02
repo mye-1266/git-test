@@ -2,6 +2,7 @@ package com.mye.demo.controller;
 
 import com.mye.demo.model.Application;
 import com.mye.demo.service.impl.ApplicationServiceImpl;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+@Api(value="用车审批",tags = {"用车审批API"},description = "描述信息")
 @RestController
 public class ApplicationController {
     @Autowired
